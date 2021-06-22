@@ -1,0 +1,72 @@
+{
+    "name": "com.appalachia.node.zenhub",
+    "displayName": "Zenhub for NodeJS",
+    "version": "0.1.0",
+    "description": "Zenhub API consumer for Appalachia Interactive.",
+    "category": "Tool",       
+    "keywords": [
+        "Scripts",
+        "Tool"
+      ],
+    "license": "MIT",
+    "author": {
+      "name": "Appalachia Interactive"
+    },
+    "activationEvents": [
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+      "commands": [
+      ],
+      "configuration": {
+      }
+    },
+    "icon": "media/icon.png",
+    "publishConfig": {
+      "registry": "http://localhost:4873/"
+    },
+    "repository": {
+      "url": "https://github.com/AppalachiaInteractive/com.appalachia.node.zenhub.git",
+      "type": "git"
+    },
+    "homepage": "https://github.com/AppalachiaInteractive/com.appalachia.node.zenhub",
+    "bugs": "https://github.com/AppalachiaInteractive/com.appalachia.node.zenhub/issues",
+    "scripts": {
+      "preversion" : "bash ~/com.appalachia/appa/appa package node preversion",
+      "version" : "bash ~/com.appalachia/appa/appa package node version",
+      "postversion" : "bash ~/com.appalachia/appa/appa package node postversion",
+      "prepack" : "bash ~/com.appalachia/appa/appa package node prepack",      
+      "package" : "bash ~/com.appalachia/appa/appa package node package",
+      "postpack" : "bash ~/com.appalachia/appa/appa package node postpack",
+      "vscode:prepublish" : "bash ~/com.appalachia/appa/appa package node vscode_prepublish",
+      "prepublishOnly" : "bash ~/com.appalachia/appa/appa package node prepublishOnly",
+      "publish" : "bash ~/com.appalachia/appa/appa package node publish",
+      "postpublish" : "bash ~/com.appalachia/appa/appa package node postpublish",
+      "lint" : "bash ~/com.appalachia/appa/appa package node lint",
+      "compile" : "bash ~/com.appalachia/appa/appa package node compile",
+      "watch": "webpack --watch",
+      "test": "bash ~/com.appalachia/appa/appa package node test",
+      "test-compile": "bash ~/com.appalachia/appa/appa package node test_compile",
+      "test-watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+      "@types/vscode": "^1.55.0",
+      "@types/glob": "^7.1.3",
+      "@types/mocha": "^8.0.4",
+      "@types/node": "^12.11.7",
+      "eslint": "^7.19.0",
+      "@typescript-eslint/eslint-plugin": "^4.14.1",
+      "@typescript-eslint/parser": "^4.14.1",
+      "glob": "^7.1.6",
+      "mocha": "^8.2.1",
+      "typescript": "^4.1.3",
+      "vscode-test": "^1.5.0",
+      "ts-loader": "^8.0.14",
+      "webpack": "^5.19.0",
+      "webpack-cli": "^4.4.0"
+    },
+    "dependencies": {
+      "vsce": "^1.87.1"
+    }
+  }
+  
